@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHq6fSDz5cwW+ps36e5N5E6ZH3VVbg5J1EBlVbfgz8IzfR1GsOBabPH8Mfu5FP9b0j3/8Vw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            .dropbtn {
+                background-color: #25d366;
+                color: white;
+                padding: 8px 16px; /* Sesuaikan padding dengan ukuran tombol .whatsapp-link */
+                border-radius: 5px; /* Tambahkan border-radius untuk sudut membulat */
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                display: inline-block; /* Menyamakan display dengan .whatsapp-link */
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropbtn {
+                background-color: #25d366;
+                color: white;
+                padding: 9px 16px;
+                font-size: 15px;
+                border: none;
+                cursor: pointer;
+            }
+            .dropbtn:hover {
+                background-color: #25d366;
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="background-audio" autoplay>
+            <source src="lagu/lagu.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        <header>
+            <h1>Fahri Hosting</h1>
+            <nav>
+                <ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Produk List</a>
+                        <div class="dropdown-content">
+                            <a href="#products">Products</a>
+                            <a href="indexv1.html">Kembali Ke Menu Awal</a>
+                            <a href="https://wa.me/601159754638">Contact</a>
+                        </div>
+                    </div>
+                    <li>
+                        <a
+                            href="https://wa.me/601159754638"
+                            target="_blank"
+                            class="whatsapp-link"
+                            >Contact Admin</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="products">
+            <div class="container">
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 1Gb Core 1</h3>
+                    <p>Harga : Rp20.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 1"
+                    />
+                    <h3>Vps Ram 2Gb Core 1</h3>
+                    <p>Harga : Rp30.0000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 1"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 2Gb Core 2</h3>
+                    <p>Harga : Rp35.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 1"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 4Gb Core 2</h3>
+                    <p>Harga : Rp45.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 8 Core 2</h3>
+                    <p>Harga : 50.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 8 Core 4</h3>
+                    <p>Harga : 60.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 16 Core 2</h3>
+                    <p>Harga : 75.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://telegra.ph/file/bb22baeef2e7c9c390a65.jpg"
+                        alt="Product 2"
+                    />
+                    <h3>Vps Ram 16 Core 4</h3>
+                    <p>Harga : 85.000</p>
+                    <a
+                        href="https://wa.me//601159754638"
+                        class="contact-button"
+                        data-product="Product 2"
+                    >
+                        Contact via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+        <header>
+            <h3>Panel Pterodactyl Private</h3>
+        </header>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Connect with us on social media:</p>
+                <div class="social-icons">
+                    <a
+                        href="https://wa.me/601159754638"
+                        target="_blank"
+                        class="social-icon"
+                    >
+                        <img
+                            src="https://telegra.ph/file/e36059585c35656976a62.jpg"
+                            alt="WhatsApp"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/rulshz"
+                        target="_blank"
+                        class="social-icon"
+                    >
+                        <img
+                            src="https://telegra.ph/file/dd67391d3b6b86df60020.jpg"
+                            alt="Instagram"
+                        />
+                    </a>
+                    <a
+                        href="https://www.tiktok.com/@rulshz"
+                        target="_blank"
+                        class="social-icon"
+                    >
+                        <img
+                            src="https://telegra.ph/file/69603b19f4d72d4bceaac.jpg"
+                            alt="TikTok"
+                        />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/fakrulafif"
+                        target="_blank"
+                        class="social-icon"
+                    >
+                        <img
+                            src="https://telegra.ph/file/8c88a266d140c4474ffe6.jpg"
+                            alt="Facebook"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Fahri Hosting</p>
+        </footer>
+        <script>
+            const audio = document.getElementById("background-audio");
+
+            // Cek apakah posisi waktu simpan sebelumnya ada
+            if (localStorage.getItem("audioTime")) {
+                audio.currentTime = localStorage.getItem("audioTime");
+            }
+
+            // Simpan posisi waktu audio setiap detik
+            setInterval(() => {
+                localStorage.setItem("audioTime", audio.currentTime);
+            }, 1000);
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

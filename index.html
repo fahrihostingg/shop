@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halaman Awal</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        />
+        <link rel="stylesheet" href="stylesv2.css" />
+        <style>
+            body {
+                font-family: "Poppins", sans-serif;
+                animation: fadeIn 1.5s ease-in-out;
+                background-image: url("https://telegra.ph/file/b3472eb5c741baa6a9e56.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                color: #fff;
+            }
+
+            @keyframes ripple {
+                0% {
+                    transform: scale(0);
+                    opacity: 0.5;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 0;
+                }
+            }
+
+            header {
+                position: relative;
+                background: rgba(51, 51, 51, 0.8);
+                color: #fff;
+                animation: slideInFromTop 1s ease-out;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+                overflow: hidden;
+            }
+
+            header::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 200%;
+                height: 100%;
+                background: linear-gradient(
+                    to right,
+                    rgba(255, 255, 255, 0.2),
+                    rgba(255, 255, 255, 0.1)
+                );
+                animation: ripple 4s infinite;
+                transform: translateX(-50%);
+            }
+
+            h1 {
+                font-family: "Georgia", serif;
+                font-weight: 600;
+                color: #3498db;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                color: #3498db;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+
+            .contact-button {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                transition:
+                    background-color 0.3s ease,
+                    transform 0.2s ease;
+                border-radius: 5px;
+                font-family: "Poppins", sans-serif;
+            }
+
+            .contact-button:hover {
+                background-color: #45a049;
+                transform: scale(1.05);
+            }
+
+            footer {
+                background: #000;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 16px;
+                animation: slideInFromBottom 1s ease-out;
+                width: 100%;
+                box-sizing: border-box;
+                position: fixed;
+                bottom: 0;
+                font-family: "Poppins", sans-serif;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .highlighted-paragraph {
+                background: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                margin: 20px auto;
+                max-width: 800px;
+                color: #f0f0f0;
+                text-align: center;
+            }
+
+            .anime-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+                margin: 20px auto;
+                max-width: 800px;
+                justify-items: center;
+            }
+
+            .anime-gallery img {
+                border-radius: 10px;
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                transition:
+                    transform 0.3s ease,
+                    filter 0.3s ease,
+                    box-shadow 0.3s ease;
+                border: 5px solid #3498db;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .anime-gallery img:hover {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+                border-color: #1d72b8;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+            }
+
+            nav {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .nav-menu {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-menu li {
+                display: inline;
+                margin: 0 15px;
+            }
+
+            .nav-menu a {
+                color: #3498db;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .nav-menu a:hover {
+                text-decoration: underline;
+            }
+
+            main {
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Lagu otomatis diputar -->
+        <audio autoplay>
+            <source src="lagu/lagu.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        <header>
+            <h1>Selamat Datang Di Market Place</h1>
+        </header>
+        <canvas id="snowCanvas"></canvas>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Fahri Hosting - DigitalMarket</h2>
+            <a href="indexv1.html" target="_blank" class="contact-button"
+                >MENU AWAL SHOP</a
+            >
+            <p class="highlighted-paragraph">
+                Selamat datang di Fahri Hosting! Kami menawarkan berbagai produk
+                berkualitas tinggi dan layanan pelanggan yang terbaik. Temukan
+                pilihan kami yang beragam dan nikmati pengalaman belanja yang
+                tidak terlupakan. Kami berkomitmen untuk memberikan Anda
+                produk-produk terbaik dengan harga yang kompetitif.
+            </p>
+            <div class="anime-gallery">
+                <img
+                    src="https://telegra.ph/file/29ae0bd59a7deb320a52b.jpg"
+                    alt="Anime 1"
+                />
+                <img
+                    src="https://telegra.ph/file/a31a1ba6aace79b381411.jpg"
+                    alt="Anime 2"
+                />
+                <img
+                    src="https://telegra.ph/file/5375ecc148f2905b329f1.jpg"
+                    alt="Anime 3"
+                />
+                <img
+                    src="https://telegra.ph/file/5a7f08644b6ccca5b967e.jpg"
+                    alt="Anime 4"
+                />
+            </div>
+        </main>
+        <script src="scriptv2.js"></script>
+    </body>
+</html>

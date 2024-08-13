@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti Arial dengan Poppins */
+    animation: fadeIn 1.5s ease-in-out;
+    background-image: url("https://telegra.ph/file/4de02e6fb37a38399566e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    animation: slideInFromTop 1s ease-out;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(51, 51, 51, 0.8);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Gunakan font-weight yang lebih berat untuk judul */
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Gunakan font-weight yang lebih ringan untuk subjudul */
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; /* Ganti font pada tombol */
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Warna hitam keabuan dengan 80% opasitas (20% transparansi) */
+    color: #fff;
+    animation: slideInFromTop 1s ease-out;
+    padding: 20px 0; /* Menambahkan padding yang lebih besar untuk header */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(51, 51, 51, 0.8); /* Menambahkan bayangan untuk efek kedalaman */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.whatsapp-link {
+    background: #25D366; /* WhatsApp Green */
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.whatsapp-linkk {
+    background: #25D366; /* WhatsApp Green */
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.whatsapp-link:hover {
+    background: #128C7E; /* Darker WhatsApp Green */
+    color: #fff;
+}
+/* Gaya untuk <ul> */
+.nav-menu {
+    list-style: none; /* Menghapus bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mengatur elemen <li> dalam baris horizontal */
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    background-color: #333; /* Warna latar belakang menu */
+}
+
+/* Gaya untuk <li> */
+.nav-menu li {
+    margin: 0 15px; /* Jarak antar elemen <li> */
+}
+
+/* Gaya untuk <a> */
+.nav-menu a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #fff; /* Warna teks */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 15px; /* Padding untuk tombol menu */
+    display: block; /* Mengubah <a> menjadi elemen block untuk padding */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+/* Gaya saat hover */
+.nav-menu a:hover {
+    background-color: #4caf50; /* Warna latar belakang saat hover */
+    color: #fff; /* Warna teks saat hover */
+}
+.footer {
+    background-color: #282c34; /* Warna latar belakang gelap */
+    color: #f5f5f5; /* Warna teks cerah */
+    text-align: center;
+    padding: 20px;
+    position: fixed; /* Memastikan footer tetap di bawah */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    font-family: 'Arial', sans-serif; /* Font yang bersih dan mudah dibaca */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; /* Ukuran font yang sesuai */
+    line-height: 1.5; /* Jarak antar baris */
+}
+#snowCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Mencegah kanvas mengganggu interaksi dengan elemen lainnya */
+    z-index: 999; /* Memastikan kanvas berada di atas konten lain */
+}
